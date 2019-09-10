@@ -1,21 +1,11 @@
 import React from 'react';
-
-const business = {
-    imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
-    name: 'MarginOtto Pizzeria',
-    address: '1010 Paddington Way',
-    city: 'Flavortown',
-    state: 'NY',
-    zipCode: '10101',
-    category: 'Italian',
-    rating: 4.5,
-    reviewCount: 90
-};
+import './Business.css';
 
 class Business extends React.Component{
     render(){
+      const {businese} = this.props;
         return(
-<div class="Business">
+<div className="Business">
   <div class="image-container">
     <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
   </div>
@@ -39,3 +29,4 @@ class Business extends React.Component{
     }
 
 }
+export default Business;
